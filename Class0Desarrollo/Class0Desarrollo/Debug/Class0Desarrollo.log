@@ -1,8 +1,8 @@
-﻿  Vector3.cpp
+﻿  Source.cpp
 c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\vector3.h(72): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\vector3.h(70): note: while compiling class template member function 'int Vector3<int>::getModule(void)'
-  c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\vector3.cpp(12): note: see reference to function template instantiation 'int Vector3<int>::getModule(void)' being compiled
-  c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\vector3.cpp(8): note: see reference to class template instantiation 'Vector3<int>' being compiled
+  c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\source.cpp(12): note: see reference to function template instantiation 'int Vector3<int>::getModule(void)' being compiled
+  c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\source.cpp(8): note: see reference to class template instantiation 'Vector3<int>' being compiled
 c:\users\sebas\documents\github\desarrollo\class0desarrollo\class0desarrollo\vector3.h(73): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   Class0Desarrollo.vcxproj -> C:\Users\Sebas\Documents\GitHub\Desarrollo\Class0Desarrollo\Debug\Class0Desarrollo.exe
   Class0Desarrollo.vcxproj -> C:\Users\Sebas\Documents\GitHub\Desarrollo\Class0Desarrollo\Debug\Class0Desarrollo.pdb (Partial PDB)
