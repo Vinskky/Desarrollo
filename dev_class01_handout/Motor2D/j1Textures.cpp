@@ -65,9 +65,17 @@ SDL_Texture* const j1Textures::Load(const char* path)
 	SDL_Texture* texture = NULL;
 	// TODO 5: Instead of reading directly from HD, use our new load methods from filesystem module
 	// You will need to use IMG_Load_PNG_RW() instead
+	//SDL_Surface *image;
+	//image = IMG_Load_RW(App->fs->Load(path), 0);
+	//texture = LoadSurface(image);
+	//SDL_FreeSurface(image);
+	//if (!image) {
+	//	printf("IMG_Load_RW: %s\n", IMG_GetError());
+	//	// handle error
+	//}
 	SDL_Surface* surface = IMG_Load(path);
 
-	if(surface == NULL)
+	if (surface == NULL)
 	{
 		LOG("Could not load surface with path: %s. IMG_Load: %s", path, IMG_GetError());
 	}
