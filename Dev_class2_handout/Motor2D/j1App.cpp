@@ -62,6 +62,8 @@ void j1App::AddModule(j1Module* module)
 bool j1App::Awake()
 {
 	bool ret = true;
+	char* modName;
+	pugi::xml_node* xmlpointer;
 
 	// --- load config file ---
 	// TODO 3: Load "config.xml" file to a buffer, then send the data to
@@ -98,6 +100,15 @@ bool j1App::Awake()
 		// that can be used to read all variables from that section. Send nullptr if the section does not exist in config.xml
 
 		ret = item->data->Awake();
+
+		
+		modName = (char*)item->data->name.GetString();
+		xmlpointer = &node.child(modName);
+
+		if (xmlpointer == nullptr)
+		{
+			LOG("Error trying to find : %s", modName);
+		}
 		item = item->next;
 	}
 

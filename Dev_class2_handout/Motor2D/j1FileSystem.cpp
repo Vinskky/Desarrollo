@@ -33,7 +33,7 @@ bool j1FileSystem::Awake()
 	bool ret = true;
 
 	// Ask SDL for a write dir
-	char* write_path = SDL_GetPrefPath(ORGANIZATION, APPNAME);
+	char* write_path = SDL_GetPrefPath(App->node.child("ORGANIZATION").child_value(), App->node.child("APPNAME").attribute("appname").value());
 
 	if(PHYSFS_setWriteDir(write_path) == 0)
 		LOG("File System error while creating write dir: %s\n", PHYSFS_getLastError());

@@ -3,14 +3,15 @@
 <Mygame>
   
   <description>My Game Awesome 2.0</description>
-  <R_FULLSCREEN fullscreen=             "false"/>
-  <R_BORDERLESS borderless =            "false"/>
-  <R_RESIZABLE resizable =              "false"/>
-  <R_FULLSCR_WINDOWED fullscr_windowed ="false"/>
-  <SCREEN_WIDTH screen_width ="640"/>
-  <SCREEN_HEIGHT screen_height ="480"/>
+  <R_FULLSCREEN fullscreen="false"/>
+  <R_BORDERLESS borderless ="false"/>
+  <R_RESIZABLE resizable ="false"/>
+  <R_FULLSCR_WINDOWED windowed ="false"/>
+  <SCREEN_WIDTH width ="640"/>
+  <SCREEN_HEIGHT height ="480"/>
   <SCALE scale="1"/>
   <ORGANIZATION>My awesome studio</ORGANIZATION>
-  <APPNAME>My Game</APPNAME>
+  <APPNAME appname="Mygame"/>
+  <audio> </audio>
   
 </Mygame>

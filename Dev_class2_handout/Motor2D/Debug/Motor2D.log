@@ -1,2 +1,5 @@
-﻿  j1Window.cpp
+﻿  j1FileSystem.cpp
+c:\users\sebas\documents\github\desarrollo\dev_class2_handout\motor2d\j1filesystem.cpp(88): warning C4244: 'initializing': conversion from 'PHYSFS_sint64' to 'PHYSFS_sint32', possible loss of data
+c:\users\sebas\documents\github\desarrollo\dev_class2_handout\motor2d\j1filesystem.cpp(93): warning C4244: 'initializing': conversion from 'PHYSFS_sint64' to 'int', possible loss of data
+c:\users\sebas\documents\github\desarrollo\dev_class2_handout\motor2d\j1filesystem.cpp(146): warning C4244: 'initializing': conversion from 'PHYSFS_sint64' to 'unsigned int', possible loss of data
   Motor2D.vcxproj -> C:\Users\Sebas\Documents\GitHub\Desarrollo\Dev_class2_handout\Debug\Motor 2D.exe
