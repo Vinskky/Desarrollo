@@ -9,6 +9,7 @@
 #include "j1Scene.h"
 #include "j1FileSystem.h"
 #include "j1App.h"
+#include "PhysFS\include\physfs.h"
 
 // Constructor
 j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
@@ -67,15 +68,20 @@ bool j1App::Awake()
 	// pugi using load_buffer() method. If everything goes well, load
 	// the top tag inside the xml_node property created in the last TODO
 	// ---
-	char* buffer = nullptr;
-	unsigned int size = App->fs->Load("XMLFile.xml",&buffer); 
-	if (size > 0)
+	char* buffer;
+	unsigned int sizeBuffer = App->fs->Load("XMLFile.xml", &buffer);
+	if (sizeBuffer > 0)
 	{
-		pugi::xml_parse_result result = App->folder->load_buffer(buffer, size);
+		pugi::xml_parse_result result = folder.load_buffer(buffer, sizeBuffer);
+		RELEASE(buffer);
+		node = folder.child("Mygame");
 	}
-	
-
-
+	else
+	{
+		LOG("File System error while loading XMLFile : %s\n", PHYSFS_getLastError());
+		ret = false;
+	}
+		
 
 	p2List_item<j1Module*>* item;
 	item = modules.start;

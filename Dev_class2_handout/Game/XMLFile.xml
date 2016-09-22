@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TODO 1 -->
-<Mygame>
-  <name>Testing XML Game</name>
+<Mygame>YAAAAY GAME 1
+         <description>
+           this game will be awesome
+         </description>
 </Mygame>
