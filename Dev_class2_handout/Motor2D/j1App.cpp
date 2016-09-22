@@ -75,9 +75,9 @@ bool j1App::Awake()
 	if (sizeBuffer > 0)
 	{
 		pugi::xml_parse_result result = folder.load_buffer(buffer, sizeBuffer);
+		RELEASE(buffer);
 		if (result)
 		{
-			RELEASE(buffer);
 			node = folder.child("Mygame");
 		}
 		else
@@ -86,7 +86,7 @@ bool j1App::Awake()
 	else
 	{
 		LOG("File System error while loading XMLFile : %s\n", PHYSFS_getLastError());
-		ret = false;
+		return false;
 	}
 		
 

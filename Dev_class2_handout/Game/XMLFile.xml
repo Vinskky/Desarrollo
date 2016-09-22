@@ -3,6 +3,7 @@
 <Mygame>
   
   <description>My Game Awesome 2.0</description>
+  <!--p2Defs-->
   <R_FULLSCREEN fullscreen="false"/>
   <R_BORDERLESS borderless ="false"/>
   <R_RESIZABLE resizable ="false"/>
@@ -12,6 +13,13 @@
   <SCALE scale="1"/>
   <ORGANIZATION>My awesome studio</ORGANIZATION>
   <APPNAME appname="Mygame"/>
-  <audio> </audio>
+  <!--Modules-->
+  <audio>
+  </audio>
+  <filesystem></filesystem>
+  <input></input>
+  <render></render>
+  <textures></textures>
+  <window></window>
   
 </Mygame>
