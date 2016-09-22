@@ -73,8 +73,13 @@ bool j1App::Awake()
 	if (sizeBuffer > 0)
 	{
 		pugi::xml_parse_result result = folder.load_buffer(buffer, sizeBuffer);
-		RELEASE(buffer);
-		node = folder.child("Mygame");
+		if (result)
+		{
+			RELEASE(buffer);
+			node = folder.child("Mygame");
+		}
+		else
+			LOG("Error while loading XMLFile to buffer");
 	}
 	else
 	{
@@ -91,6 +96,7 @@ bool j1App::Awake()
 		// TODO 7: Add a new argument to the Awake method to receive a pointer to a xml node.
 		// If the section with the module name exist in config.xml, fill the pointer with the address of a valid xml_node
 		// that can be used to read all variables from that section. Send nullptr if the section does not exist in config.xml
+
 		ret = item->data->Awake();
 		item = item->next;
 	}
