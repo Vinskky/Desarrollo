@@ -69,7 +69,7 @@ bool j1App::Awake()
 	// the top tag inside the xml_node property created in the last TODO
 	// ---
 	char* buffer;
-	unsigned int sizeBuffer = App->fs->Load("XMLFile.xml", &buffer);
+	unsigned int sizeBuffer = fs->Load("XMLFile.xml", &buffer);
 	if (sizeBuffer > 0)
 	{
 		pugi::xml_parse_result result = folder.load_buffer(buffer, sizeBuffer);

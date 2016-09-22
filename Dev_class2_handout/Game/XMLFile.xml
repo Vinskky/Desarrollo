@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TODO 1 -->
 <Mygame>YAAAAY GAME 1
-         <description>
-           this game will be awesome
-         </description>
+  <description>this game will be awesome</description>
+  <audio>
+    <music>music::"NULL"</music>
+  </audio>
+  <j1fileSystem></j1fileSystem>
+  <j1input></j1input>
+  <j1render></j1render>
+  <j1textures></j1textures>
+  <j1window></j1window>
+  
 </Mygame>
