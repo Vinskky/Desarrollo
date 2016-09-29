@@ -293,9 +293,19 @@ void j1App::Load()
 	want_to_load = true;
 }
 
-bool j1App::Load_Xml(pugi::xml_node xmlNode)
+bool j1App::Load_file()
 {
-	App->render->Load(xmlNode);
+	p2List_item<j1Module*>* item = modules.end;
+	bool iterator = true;
+	while (iterator == true)
+	{
+		iterator = item->data->Load();
+		if (iterator == true)
+		{
+
+		}
+	}
+	 
 }
 // TODO 3: Create a simulation of the xml file to read 
 

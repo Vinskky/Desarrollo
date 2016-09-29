@@ -77,7 +77,7 @@ private:
 	bool LoadGameNow();
 	bool SavegameNow() const;
 
-	bool Load_Xml(pugi::xml_node xmlNode);
+	bool Load_file();
 
 public:
 
